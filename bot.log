@@ -1,0 +1,433 @@
+2025-01-08 19:49:03,804 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:49:14,937 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:15,005 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:49:16,209 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:49:16,381 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:16,443 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:49:17,283 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:49:18,823 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:49:19,190 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:19,248 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:49:20,286 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:49:20,428 - __main__ - ERROR - Бейтаныс қате:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 319, in handle_callback
+    await handle_special_variant(callback, subject_code, access_type)
+  File "c:\Doc\tg_bot\bot.py", line 467, in handle_special_variant
+    subject_name = SUBJECT_MAP.get(subject_code, "Белгісіз")
+                   ^^^^^^^^^^^
+NameError: name 'SUBJECT_MAP' is not defined
+2025-01-08 19:49:24,306 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:24,364 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:49:25,857 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:49:26,006 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:26,067 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:49:26,984 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:49:28,551 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:49:28,734 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:49:28,792 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:49:29,700 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:49:29,894 - __main__ - ERROR - Бейтаныс қате:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 319, in handle_callback
+    await handle_special_variant(callback, subject_code, access_type)
+  File "c:\Doc\tg_bot\bot.py", line 467, in handle_special_variant
+    subject_name = SUBJECT_MAP.get(subject_code, "Белгісіз")
+                   ^^^^^^^^^^^
+NameError: name 'SUBJECT_MAP' is not defined
+2025-01-08 19:55:26,452 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:55:26,523 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:55:30,556 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:55:30,621 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:56:07,651 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:07,707 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:56:09,859 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:56:10,046 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:10,101 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:56:26,147 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:26,203 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 20:06:59,349 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:06:59,413 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 20:07:00,708 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 20:07:00,863 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:07:00,927 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 20:07:01,741 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 20:07:03,153 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 20:07:03,371 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:07:03,433 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 20:07:04,728 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 20:07:04,986 - __main__ - ERROR - Бейтаныс қате:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 319, in handle_callback
+    await handle_special_variant(callback, subject_code, access_type)
+  File "c:\Doc\tg_bot\bot.py", line 467, in handle_special_variant
+    subject_name = SUBJECT_MAP.get(subject_code, "Белгісіз")
+                   ^^^^^^^^^^^
+NameError: name 'SUBJECT_MAP' is not defined
+2025-01-08 20:07:22,084 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:07:22,598 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:07:22,660 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 20:07:24,002 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:07:24,267 - __main__ - ERROR - Бейтаныс қате:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 319, in handle_callback
+    await handle_special_variant(callback, subject_code, access_type)
+  File "c:\Doc\tg_bot\bot.py", line 467, in handle_special_variant
+    subject_name = SUBJECT_MAP.get(subject_code, "Белгісіз")
+                   ^^^^^^^^^^^
+NameError: name 'SUBJECT_MAP' is not defined
+2025-01-08 20:08:10,844 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 20:08:20,418 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:20,477 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 20:08:21,945 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:08:22,115 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:22,174 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 20:08:23,060 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:08:24,880 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:08:25,098 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:25,163 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 20:08:26,292 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:08:26,456 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 20:08:28,846 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 20:08:29,046 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:29,107 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 20:08:30,178 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 20:08:30,375 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 20:08:54,372 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 20:08:57,713 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:57,785 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 20:08:59,409 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 20:08:59,573 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:08:59,637 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 20:09:00,609 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:00,996 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 20:09:01,366 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-09 20:09:00.730332.
+2025-01-08 20:09:03,483 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:03,749 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 20:09:03,937 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-09 20:09:03.583155.
+2025-01-08 20:09:05,224 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:05,456 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 20:09:05,635 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-09 20:09:05.334511.
+2025-01-08 20:09:06,185 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:06,415 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділігі жоқ немесе лимит таусылды.
+2025-01-08 20:09:09,239 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-08 20:09:09,459 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:09:09,529 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-08 20:09:10,491 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:10,722 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:09:10,785 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 20:09:11,885 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:12,232 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 20:09:12,497 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-09 20:09:12.042950.
+2025-01-08 20:09:13,925 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 20:09:14,097 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділігі жоқ немесе лимит таусылды.
+2025-01-08 20:09:15,607 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-08 20:09:15,937 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:09:16,002 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-08 20:09:17,626 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:09:17,787 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 20:09:17,851 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 20:09:19,203 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 20:09:19,452 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 20:09:19,697 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Информатика, уақыт 2025-01-09 20:09:19.312860.
+2025-01-10 00:23:06,696 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 00:23:15,923 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 00:23:26,965 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 00:23:27,294 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 00:23:28,718 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 00:23:31,511 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-10 00:23:31,776 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-10 00:23:35,610 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 00:24:04,575 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-10 00:24:08,430 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 00:26:26,840 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 00:26:28,178 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 00:33:44,102 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 00:33:48,696 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:18:47,370 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:19:09,120 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:20:33,925 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:21:39,838 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:22:39,780 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:23:24,962 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:25:08,155 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:25:09,322 - __main__ - INFO - Пайдаланушы 1727718224 Слив қолжетімділікке ие: True
+2025-01-10 01:25:09,324 - __main__ - INFO - Пайдаланушы 1727718224 Слив қолжетімділікке ие: True
+2025-01-10 01:25:14,357 - __main__ - INFO - Пайдаланушы 1727718224 Слив қолжетімділікке ие: True
+2025-01-10 01:25:17,003 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:17,325 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:25:19,733 - __main__ - WARNING - Пайдаланушының 1727718224 алдыңғы мәзірін жою мүмкін болмады.
+2025-01-10 01:25:22,713 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:26,642 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:26,912 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:25:28,379 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:42,359 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:42,628 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:25:44,126 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:25:46,906 - __main__ - INFO - Пайдаланушы 1727718224 Слив қолжетімділікке ие: True
+2025-01-10 01:26:14,794 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:26:18,696 - __main__ - INFO - Пайдаланушы 1727718224 Слив қолжетімділікке ие: True
+2025-01-10 01:26:22,519 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-10 01:26:24,865 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:25,116 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:26:26,235 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:27,837 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 503, in handle_free_variant
+    await conn.execute("""
+    ...<4 lines>...
+    """, user_id, subject_name, new_time)
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 352, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "next_sliv_time" of relation "user_cooldowns" does not exist
+2025-01-10 01:26:28,745 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:29,094 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:26:30,824 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:31,661 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 503, in handle_free_variant
+    await conn.execute("""
+    ...<4 lines>...
+    """, user_id, subject_name, new_time)
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 352, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "next_sliv_time" of relation "user_cooldowns" does not exist
+2025-01-10 01:26:43,531 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:26:43,846 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Слив қолжетімділік: True
+2025-01-10 01:26:46,183 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:26:47,256 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 503, in handle_free_variant
+    await conn.execute("""
+    ...<4 lines>...
+    """, user_id, subject_name, new_time)
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 352, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "next_sliv_time" of relation "user_cooldowns" does not exist
+2025-01-10 01:26:49,340 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:49,837 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Слив қолжетімділік: True
+2025-01-10 01:26:50,772 - __main__ - INFO - CallbackQuery қабылданды: variant_sliv_math пайдаланушыдан: 1727718224
+2025-01-10 01:26:51,091 - __main__ - ERROR - Слив нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Doc\tg_bot\bot.py", line 564, in handle_sliv_variant
+    cooldown_record = await conn.fetchrow("""
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    """, user_id, subject_name)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\yedil\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "next_sliv_time" does not exist
+2025-01-10 01:28:17,440 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:28:23,843 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:28:26,347 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:28:28,288 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-10 01:28:30,664 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:28:32,226 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:28:32,515 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:28:33,802 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:28:41,586 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 01:28:44,001 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-10 01:28:44,268 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-10 01:28:45,501 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:28:45,752 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-10 01:28:46,830 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:28:55,854 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:28:56,223 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-10 01:28:57,187 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:32:20,834 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:32:24,554 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: False
+2025-01-10 01:32:26,091 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:32:26,429 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: False
+2025-01-10 01:32:27,375 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:32:29,722 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:32:30,062 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: False
+2025-01-10 01:32:31,201 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:32:34,634 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 01:32:36,931 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-10 01:32:37,325 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: False
+2025-01-10 01:32:38,584 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:32:38,883 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: False
+2025-01-10 01:32:40,575 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:32:43,548 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:33:40,058 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:33:54,189 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:33:55,866 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:33:56,244 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:33:57,256 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 01:33:59,575 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:33:59,950 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:34:00,921 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 01:34:23,940 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:34:27,094 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:34:27,430 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:34:28,742 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:34:31,414 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:34:31,713 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:34:33,181 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:06,733 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:07,412 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:35:09,001 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:29,189 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:29,556 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:35:31,938 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:34,626 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 01:35:35,018 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 01:36:26,775 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:36:32,374 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-10 01:36:38,643 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:36:38,987 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-10 01:36:40,205 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:37:39,027 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:38:18,058 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:40:54,906 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 01:41:03,773 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-10 01:41:05,328 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:41:05,660 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-10 01:41:06,693 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:41:08,891 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:41:09,230 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-10 01:41:10,180 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:41:12,454 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-10 01:41:12,844 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
