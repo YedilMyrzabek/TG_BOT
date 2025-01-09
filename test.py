@@ -55,7 +55,7 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
 # 5. Админдердің тізімі (немесе жиыны)
-ADMIN_IDS = {1044841557}  # <-- необходимые Telegram user_id
+ADMIN_IDS = {1044841557, 1727718224}  # <-- необходимые Telegram user_id
 
 # 6. Asyncpg арқылы дерекқорға қосылу
 async def get_db_pool():
