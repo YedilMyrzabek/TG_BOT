@@ -1084,3 +1084,100 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2025-01-10 00:02:09,207 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
 2025-01-10 00:02:11,271 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
 >>>>>>> 70fcdc19a2a243900dc1402b558db58319a071bb
+2025-01-10 03:07:43,278 - __main__ - ERROR - Отсутствует TELEGRAM_TOKEN немесе DB_URL .env файлы!
+2025-01-10 03:08:29,524 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 03:09:05,874 - __main__ - INFO - Пайдаланушы 1044841557 Слив қолжетімділікке ие: False
+2025-01-10 03:09:18,374 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
+2025-01-10 03:09:30,846 - __main__ - INFO - Пайдаланушы 1044841557 Слив қолжетімділікке ие: False
+2025-01-10 03:09:32,461 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:32,925 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:09:34,869 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:39,166 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:39,756 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:09:41,414 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:44,280 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:44,884 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:09:46,534 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:49,299 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:50,011 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:09:51,139 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:09:55,645 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:09:56,801 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Слив қолжетімділік: False
+2025-01-10 03:09:58,206 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:10:05,886 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:10:06,475 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Слив қолжетімділік: False
+2025-01-10 03:10:08,037 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:10:37,222 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:10:37,817 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:10:39,680 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1044841557
+2025-01-10 03:11:08,143 - __main__ - INFO - Пайдаланушы 1044841557 Слив қолжетімділікке ие: False
+2025-01-10 03:11:10,912 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
+2025-01-10 03:12:23,267 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 03:12:26,057 - __main__ - INFO - Пайдаланушы 1044841557 Слив қолжетімділікке ие: False
+2025-01-10 03:12:28,581 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
+2025-01-10 03:13:50,396 - __main__ - INFO - Пайдаланушы 1044841557 Слив қолжетімділікке ие: False
+2025-01-10 03:13:52,297 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:13:52,877 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:13:54,753 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:13:58,439 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:13:59,036 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:14:00,579 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:14:03,865 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:14:04,471 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Слив қолжетімділік: False
+2025-01-10 03:14:06,120 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:14:09,191 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:14:09,775 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Слив қолжетімділік: False
+2025-01-10 03:14:11,658 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:14:18,714 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:14:19,306 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:14:21,172 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1044841557
+2025-01-10 03:16:07,256 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 03:16:11,250 - __main__ - INFO - Пайдаланушы 1044841557 слив қолжетімділікке ие: False
+2025-01-10 03:16:16,948 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
+2025-01-10 03:16:17,074 - __main__ - ERROR - Хабарлама жіберу кезінде қате: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 353
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\bot.py", line 830, in show_help
+    sent_message = await message.answer(help_text, parse_mode="Markdown", reply_markup=keyboard)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 353
+2025-01-10 03:26:09,057 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 03:26:19,716 - __main__ - INFO - Пайдаланушы 1044841557 слив қолжетімділікке ие: False
+2025-01-10 03:26:22,280 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
+2025-01-10 03:27:34,947 - __main__ - INFO - Пайдаланушы 1044841557 слив қолжетімділікке ие: False
+2025-01-10 03:27:37,443 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:27:38,028 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Слив қолжетімділік: False
+2025-01-10 03:27:40,729 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1044841557
+2025-01-10 03:27:41,317 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Слив қолжетімділік: False
+2025-01-10 03:27:42,973 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:27:43,583 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Слив қолжетімділік: False
+2025-01-10 03:27:45,430 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1044841557
+2025-01-10 03:27:46,036 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Слив қолжетімділік: False
+2025-01-10 03:32:50,368 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-10 03:32:52,785 - __main__ - INFO - Пайдаланушы 1044841557 слив қолжетімділікке ие: False
+2025-01-10 03:32:56,437 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:32:56,831 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math.
+2025-01-10 03:32:58,553 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1044841557
+2025-01-10 03:33:01,237 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:33:01,532 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics.
+2025-01-10 03:33:03,076 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:33:06,150 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:33:06,452 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics.
+2025-01-10 03:33:07,685 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1044841557
+2025-01-10 03:33:10,756 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-10 03:33:11,164 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math.
+2025-01-10 03:33:12,610 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-10 03:33:24,578 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
