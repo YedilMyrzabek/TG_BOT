@@ -1,536 +1,650 @@
-2025-01-06 18:25:42,527 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 18:26:35,795 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 18:26:40,683 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:42,676 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:48,179 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:49,836 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:52,298 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:54,135 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1727718224
-2025-01-06 18:26:56,475 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-06 18:27:00,553 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1727718224
-2025-01-06 18:27:04,784 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-06 18:27:07,235 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1727718224
-2025-01-06 18:27:08,673 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-06 18:27:10,216 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1727718224
-2025-01-06 18:27:11,713 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-06 18:27:13,158 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1727718224
-2025-01-06 18:27:15,153 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-06 18:27:16,574 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1727718224
-2025-01-06 18:32:43,957 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-06 18:44:18,268 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-06 18:58:54,027 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 19:00:28,326 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 19:00:52,815 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-06 19:00:59,854 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-06 19:01:11,028 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-06 19:01:14,729 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-06 19:01:21,196 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-06 19:01:22,827 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-06 19:01:30,630 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-06 19:01:32,289 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1044841557
-2025-01-06 19:03:53,247 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 19:03:54,398 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1727718224
-2025-01-06 19:03:54,925 - __main__ - ERROR - Ошибка при ответе на CallbackQuery: Bad Request: query is too old and response timeout expired or query ID is invalid
+2025-01-08 19:11:50,756 - __main__ - INFO - База данных инициализирована.
+2025-01-08 19:11:53,257 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
+2025-01-08 19:11:54,006 - __main__ - INFO - Пользователь 1727718224 имеет 40 премиум-пробников для math.
+2025-01-08 19:11:54,081 - __main__ - INFO - Пользователь 1727718224 выбрал предмет: Математика. Премиум-доступ: True
+2025-01-08 19:11:56,518 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
+2025-01-08 19:11:56,972 - __main__ - INFO - Пользователь 1727718224 имеет 40 премиум-пробников. Последний тест ID: 0
+2025-01-08 19:11:57,260 - __main__ - WARNING - Премиум-пробники не найдены: Предмет math, Тип доступа special
+2025-01-08 19:12:23,020 - __main__ - INFO - Polling был отменен.
+2025-01-08 19:13:40,917 - __main__ - INFO - База данных инициализирована.
+2025-01-08 19:13:50,660 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
+2025-01-08 19:13:50,971 - __main__ - INFO - Пользователь 1727718224 имеет 10 премиум-пробников для math.
+2025-01-08 19:13:51,027 - __main__ - INFO - Пользователь 1727718224 выбрал предмет: Математика. Премиум-доступ: True
+2025-01-08 19:13:52,836 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
+2025-01-08 19:13:53,213 - __main__ - INFO - Пользователь 1727718224 имеет 10 премиум-пробников. Последний тест ID: 0
+2025-01-08 19:13:53,337 - __main__ - WARNING - Премиум-пробники не найдены: Предмет math, Тип доступа special
+2025-01-08 19:14:07,159 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
+2025-01-08 19:14:07,626 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников для informatics.
+2025-01-08 19:14:07,695 - __main__ - INFO - Пользователь 1727718224 выбрал предмет: Информатика. Премиум-доступ: False
+2025-01-08 19:14:08,928 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1727718224
+2025-01-08 19:14:09,216 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-доступа или лимит исчерпан.
+2025-01-08 19:14:11,114 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1727718224
+2025-01-08 19:14:11,303 - __main__ - INFO - Текущее UTC время: 2025-01-08 14:14:11.303185+00:00
+2025-01-08 19:14:11,874 - __main__ - INFO - Все тесты по предмету informatics были отправлены пользователю 1727718224. Сброс списка отправленных тестов.
+2025-01-08 19:14:12,493 - __main__ - INFO - Установка кулдауна: Пользователь 1727718224, предмет informatics, время 2025-01-08 14:15:11.303185+00:00
+2025-01-08 19:14:12,640 - __main__ - INFO - Кулдаун обновлен: Пользователь 1727718224, предмет informatics, время 2025-01-08 14:15:11.303185+00:00.
+2025-01-08 19:14:14,044 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
+2025-01-08 19:14:14,347 - __main__ - INFO - Пользователь 1727718224 имеет 10 премиум-пробников для math.
+2025-01-08 19:14:14,404 - __main__ - INFO - Пользователь 1727718224 выбрал предмет: Математика. Премиум-доступ: True
+2025-01-08 19:14:21,256 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1727718224
+2025-01-08 19:14:21,508 - __main__ - INFO - Текущее UTC время: 2025-01-08 14:14:21.508550+00:00
+2025-01-08 19:14:24,378 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
+2025-01-08 19:14:24,629 - __main__ - INFO - Polling был отменен.
+2025-01-08 19:14:56,797 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:14:58,545 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:14:58,604 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:15:01,908 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:02,223 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:02,285 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:03,757 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:05,846 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:06,217 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:06,282 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:08,668 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:13,470 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:13,714 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:13,775 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:15,248 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:17,125 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:17,387 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:17,450 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:18,602 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:18,794 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:15:23,603 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:23,842 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:23,903 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:15:25,273 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:27,260 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:27,540 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:27,603 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:15:28,717 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:31,329 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:31,676 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:31,741 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:15:33,002 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:33,245 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:15:35,616 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:35,866 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:35,929 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:15:37,283 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:15:43,360 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:43,621 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:43,723 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:45,117 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:48,968 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:49,031 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:15:50,339 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:50,599 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:50,661 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:52,640 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:55,464 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:55,708 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:55,771 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:15:56,978 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:58,831 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:15:59,073 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:15:59,134 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:16:00,531 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:16:02,664 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:16:02,907 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:02,970 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:16:04,137 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:16:05,900 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:06,280 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:06,343 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:16:07,575 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:09,348 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:09,587 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:09,647 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:16:10,812 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:13,215 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:13,540 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:13,604 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:16:14,790 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:25,434 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:25,701 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:25,766 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:16:27,550 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:31,614 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:16:31,943 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:16:32,004 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:16:33,374 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:29:30,689 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:31:51,503 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:31:56,815 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:31:56,872 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:31:58,382 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:31:58,772 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:31:58,831 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:31:59,760 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:32:00,113 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
 Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 199, in handle_callback
-    await callback.answer()
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
-2025-01-06 19:04:06,367 - __main__ - INFO - Получен CallbackQuery: main_menu от пользователя: 1044841557
-2025-01-06 19:04:11,530 - __main__ - INFO - Получен CallbackQuery: show_subscribers от пользователя: 1044841557
-2025-01-06 19:06:51,808 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 19:10:18,010 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-06 19:10:51,555 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-06 19:10:54,098 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-06 19:14:06,083 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-06 19:14:08,087 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_informatics от пользователя: 1044841557
-2025-01-06 19:16:05,592 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 965417533
-2025-01-06 19:16:08,034 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 965417533
-2025-01-06 19:16:11,726 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 965417533
-2025-01-06 19:16:13,619 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 965417533
-2025-01-06 19:16:16,674 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-06 19:16:20,583 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 965417533
-2025-01-06 19:16:23,815 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 965417533
-2025-01-06 19:16:25,507 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 965417533
-2025-01-06 19:16:28,373 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-06 19:16:29,957 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 965417533
-2025-01-06 19:16:36,493 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-06 19:16:38,559 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 965417533
-2025-01-06 19:16:49,066 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-06 19:16:51,257 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 965417533
-2025-01-06 19:17:10,780 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-06 19:17:13,980 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 965417533
-2025-01-06 19:17:18,341 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 965417533
-2025-01-06 19:17:19,781 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 965417533
-2025-01-06 19:17:22,264 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 965417533
-2025-01-07 02:28:05,709 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-07 02:28:14,376 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:28:16,630 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 02:28:20,807 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:28:22,774 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 02:28:25,639 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:28:28,281 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1044841557
-2025-01-07 02:28:33,334 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:28:35,339 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_informatics от пользователя: 1044841557
-2025-01-07 02:37:42,326 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-07 02:38:16,015 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-07 02:38:28,576 - __main__ - INFO - Мәліметтер базасына сәтті қосылды!
-2025-01-07 02:43:46,941 - __main__ - INFO - База данных инициализирована.
-2025-01-07 02:45:41,731 - __main__ - INFO - База данных инициализирована.
-2025-01-07 02:46:07,948 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:46:11,292 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 02:46:39,273 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:46:43,890 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-07 02:46:47,608 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:46:52,845 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-07 02:46:56,138 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:52:33,383 - __main__ - INFO - База данных инициализирована.
-2025-01-07 02:52:42,121 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:52:45,059 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-07 02:52:48,642 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:52:54,787 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-07 02:52:58,268 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:53:00,417 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 02:53:06,390 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:53:06,972 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 365, in handle_free_variant
+    access = await conn.fetchrow("""
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "last_test_id" does not exist
+2025-01-08 19:32:02,722 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:32:12,956 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:32:13,333 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:32:13,397 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:34:43,206 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:34:49,983 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:34:50,043 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:34:51,460 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:34:51,807 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:34:51,868 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:34:53,111 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:34:55,491 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:34:55,800 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:34:55,859 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:34:57,161 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:34:58,624 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:34:58,854 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:34:58,915 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:35:00,083 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:37:21,182 - __main__ - INFO - База данных инициализирована.
+2025-01-08 19:37:24,639 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:37:24,700 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:37:25,931 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:37:26,195 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:37:26,249 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:37:27,149 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:37:27,532 - __main__ - ERROR - Бейтаныс қате:
 Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 02:53:10,556 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:53:11,374 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 350, in handle_callback
+    await handle_free_variant(callback, subject_code)
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 386, in handle_free_variant
+    result = await send_sample(user_id, subject_name, access_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 228, in send_sample
+    access = await conn.fetchrow("""
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "last_sent" does not exist
+2025-01-08 19:37:30,389 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:37:30,616 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:37:30,671 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:37:31,643 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:37:32,009 - __main__ - ERROR - Бейтаныс қате:
 Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 02:53:13,423 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:53:14,242 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 356, in handle_callback
+    await handle_special_variant(callback, subject_code, access_type)
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 410, in handle_special_variant
+    result = await send_sample(user_id, subject_name, access_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 228, in send_sample
+    access = await conn.fetchrow("""
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 2012, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "last_sent" does not exist
+2025-01-08 19:38:29,627 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:38:32,991 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:33,047 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:38:34,329 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:34,620 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:34,681 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:38:35,563 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:37,546 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:37,805 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:37,862 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:38:39,320 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:41,102 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:41,348 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:41,404 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:38:42,564 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:44,548 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:38:44,835 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:44,894 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:38:47,088 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:38:49,559 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:38:49,783 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:49,840 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:38:51,202 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:38:51,397 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:38:54,365 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:54,939 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:54,998 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:38:56,517 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:56,850 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:38:58,855 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:38:59,088 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:38:59,197 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:39:01,155 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:39:01,346 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:39:03,555 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:39:03,781 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:39:03,838 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:39:05,017 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:39:05,197 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:55:17,908 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:55:25,903 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:55:25,957 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-08 19:55:32,805 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-08 19:56:02,824 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-08 19:56:09,906 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-08 19:56:10,555 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:10,615 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-08 19:56:10,861 - __main__ - ERROR - Хабарламаны өңдеу кезінде қате: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
 Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 02:53:14,959 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:53:15,574 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 02:53:25,726 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:53:26,325 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 02:59:28,851 - __main__ - INFO - База данных инициализирована.
-2025-01-07 02:59:40,294 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 02:59:42,853 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_informatics от пользователя: 1044841557
-2025-01-07 02:59:55,145 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 02:59:58,623 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-07 03:00:01,490 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:00:03,744 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 03:00:07,567 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:00:08,154 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 03:00:13,000 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:00:13,573 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 03:00:14,393 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:00:15,211 - __main__ - ERROR - TelegramBadRequest: Bad Request: there is no text in the message to edit
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 206, in handle_callback
-    await callback.message.edit_text(
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
-    return await bot(self)
-           ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
-    response = self.check_response(
-               ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: there is no text in the message to edit
-2025-01-07 03:04:52,922 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:07:01,675 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:07:04,346 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 03:07:09,321 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-07 03:07:11,983 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:07:16,502 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1044841557
-2025-01-07 03:07:20,381 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-07 03:09:38,019 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:09:48,673 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:09:50,691 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_math от пользователя: 1044841557
-2025-01-07 03:12:10,277 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:12:17,139 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:12:19,391 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_informatics от пользователя: 1044841557
-2025-01-07 03:13:01,582 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:13:03,901 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 03:13:08,237 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:13:11,418 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_informatics от пользователя: 1044841557
-2025-01-07 03:19:16,604 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:19:55,794 - __main__ - INFO - Получен CallbackQuery: main_menu от пользователя: 1044841557
-2025-01-07 03:19:58,557 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:20:01,533 - __main__ - INFO - Получен CallbackQuery: variant_free_subject_math от пользователя: 1044841557
-2025-01-07 03:20:05,213 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:20:07,677 - __main__ - INFO - Получен CallbackQuery: variant_special_subject_informatics от пользователя: 1044841557
-2025-01-07 03:41:04,472 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:41:31,986 - __main__ - INFO - Получен CallbackQuery: main_menu от пользователя: 1044841557
-2025-01-07 03:41:34,765 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:41:37,003 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:44:35,282 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:44:54,436 - __main__ - INFO - Получен CallbackQuery: main_menu от пользователя: 1044841557
-2025-01-07 03:44:56,857 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:44:59,069 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1044841557
-2025-01-07 03:45:04,161 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:45:06,109 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1044841557
-2025-01-07 03:48:33,979 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:48:59,807 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:49:03,678 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1044841557
-2025-01-07 03:49:07,672 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:49:09,719 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1044841557
-2025-01-07 03:51:55,712 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:52:04,650 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:52:08,662 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1044841557
-2025-01-07 03:55:31,058 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:55:36,954 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:55:37,056 - __main__ - INFO - Пользователь 1044841557 имеет премиум доступ: False
-2025-01-07 03:55:39,082 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:55:39,688 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:55:39,779 - __main__ - INFO - Пользователь 1044841557 выбирает предмет math. Премиум доступ: False
-2025-01-07 03:55:42,324 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-07 03:55:42,748 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:55:42,846 - __main__ - INFO - Пользователь 1044841557 возвращается в главное меню. Премиум доступ: False
-2025-01-07 03:55:44,576 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:55:44,963 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:55:45,062 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 03:55:47,342 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1044841557
-2025-01-07 03:55:50,209 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:55:50,718 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:55:50,821 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 03:55:52,404 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1044841557
-2025-01-07 03:58:35,918 - __main__ - INFO - База данных инициализирована.
-2025-01-07 03:58:50,368 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:58:50,461 - __main__ - INFO - Пользователь 1044841557 имеет премиум доступ: False
-2025-01-07 03:58:50,636 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:58:50,728 - __main__ - INFO - Пользователь 1044841557 имеет премиум доступ: False
-2025-01-07 03:58:54,325 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:58:54,834 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:58:55,038 - __main__ - INFO - Пользователь 1044841557 выбирает предмет math. Премиум доступ: False
-2025-01-07 03:58:57,295 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1044841557
-2025-01-07 03:59:02,510 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:59:03,008 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:59:03,110 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 03:59:04,874 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1044841557
-2025-01-07 03:59:19,416 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 03:59:19,762 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:59:19,855 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 03:59:21,770 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1044841557
-2025-01-07 03:59:22,259 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:59:22,355 - __main__ - INFO - Пользователь 1044841557 возвращается в главное меню. Премиум доступ: False
-2025-01-07 03:59:24,464 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 03:59:24,968 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 03:59:25,144 - __main__ - INFO - Пользователь 1044841557 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:24:17,375 - __main__ - INFO - База данных инициализирована.
-2025-01-07 16:24:18,897 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:24:18,898 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:24:18,904 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:24:18,905 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:24:18,994 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:24:18,998 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:24:18,999 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:24:19,000 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:24:36,947 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:24:37,037 - __main__ - INFO - Пользователь 1044841557 имеет премиум доступ: False
-2025-01-07 16:24:41,767 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 16:24:42,128 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:24:42,235 - __main__ - INFO - Пользователь 1044841557 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:24:44,098 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1044841557
-2025-01-07 16:24:49,224 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 16:24:49,662 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:24:49,748 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:24:51,334 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1044841557
-2025-01-07 16:32:40,622 - __main__ - INFO - База данных инициализирована.
-2025-01-07 16:32:50,092 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:32:50,193 - __main__ - INFO - Пользователь 1044841557 имеет премиум доступ: False
-2025-01-07 16:32:52,432 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1044841557
-2025-01-07 16:32:52,936 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:32:53,046 - __main__ - INFO - Пользователь 1044841557 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:32:54,686 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1044841557
-2025-01-07 16:33:23,604 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1044841557
-2025-01-07 16:33:24,068 - __main__ - INFO - Пользователь 1044841557 не имеет премиум-пробников.
-2025-01-07 16:33:24,168 - __main__ - INFO - Пользователь 1044841557 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:35:14,354 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:14,473 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:35:20,502 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-07 16:35:20,991 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:21,108 - __main__ - INFO - Пользователь 1727718224 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:35:24,464 - __main__ - INFO - Получен CallbackQuery: variant_free_informatics от пользователя: 1727718224
-2025-01-07 16:35:30,576 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:35:31,081 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:31,170 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:35:32,594 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1727718224
-2025-01-07 16:35:35,359 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-07 16:35:35,731 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:35,840 - __main__ - INFO - Пользователь 1727718224 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:35:37,765 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1727718224
-2025-01-07 16:35:42,433 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:35:42,841 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:42,972 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:35:45,527 - __main__ - INFO - Получен CallbackQuery: back_subjects от пользователя: 1727718224
-2025-01-07 16:35:45,904 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:46,019 - __main__ - INFO - Пользователь 1727718224 возвращается в главное меню. Премиум доступ: False
-2025-01-07 16:35:50,068 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-07 16:35:50,528 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:35:50,636 - __main__ - INFO - Пользователь 1727718224 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:35:52,430 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1727718224
-2025-01-07 16:36:50,940 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:36:51,386 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:36:51,488 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:36:52,624 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:37:04,254 - __main__ - INFO - Получен CallbackQuery: subject_informatics от пользователя: 1727718224
-2025-01-07 16:37:04,912 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:37:05,005 - __main__ - INFO - Пользователь 1727718224 выбирает предмет informatics. Премиум доступ: False
-2025-01-07 16:37:06,326 - __main__ - INFO - Получен CallbackQuery: variant_special_informatics от пользователя: 1727718224
-2025-01-07 16:37:10,296 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:37:10,718 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:37:10,811 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:37:12,592 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:42:40,297 - __main__ - INFO - База данных инициализирована.
-2025-01-07 16:42:42,078 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:42:42,190 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:42:48,112 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:42:48,464 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:42:48,549 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:42:49,942 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:42:50,286 - __main__ - INFO - Пользователь 1727718224 является администратором.
-2025-01-07 16:42:52,471 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:42:52,825 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:42:52,911 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:42:54,563 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1044841557
-2025-01-07 16:42:54,820 - __main__ - INFO - Пользователь 1044841557 является администратором.
-2025-01-07 16:42:55,187 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1727718224
-2025-01-07 16:42:56,561 - __main__ - ERROR - Ошибка при редактировании сообщения: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
-Traceback (most recent call last):
-  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 157, in safe_edit_text
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 166, in safe_edit_text
     await callback.message.edit_text(text=text, parse_mode=parse_mode, reply_markup=reply_markup)
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\methods\base.py", line 84, in emit
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
     return await bot(self)
            ^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\bot.py", line 494, in __call__
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\bot.py", line 498, in __call__
     return await self.session(self, method, timeout=request_timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 254, in __call__
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
     return cast(TelegramType, await middleware(bot, method))
                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
     response = self.check_response(
                ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Maksa\AppData\Roaming\Python\Python312\site-packages\aiogram\client\session\base.py", line 120, in check_response
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
     raise TelegramBadRequest(method=method, message=description)
 aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
-2025-01-07 16:43:02,856 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:43:03,318 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:43:03,424 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:43:04,901 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:43:05,185 - __main__ - INFO - Пользователь 1727718224 является администратором.
-2025-01-07 16:44:28,049 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:44:28,446 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:44:28,548 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:44:30,166 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:44:30,448 - __main__ - INFO - Пользователь 1727718224 является администратором.
-2025-01-07 16:44:38,086 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:44:38,519 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:44:38,618 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:44:39,673 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 1727718224
-2025-01-07 16:47:05,990 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 1727718224
-2025-01-07 16:47:06,455 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:47:06,548 - __main__ - INFO - Пользователь 1727718224 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:47:07,719 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 1727718224
-2025-01-07 16:47:08,093 - __main__ - INFO - Пользователь 1727718224 является администратором.
-2025-01-07 16:50:19,248 - __main__ - INFO - Пользователь 1727718224 не имеет премиум-пробников.
-2025-01-07 16:50:19,338 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: False
-2025-01-07 16:50:50,018 - __main__ - INFO - Пользователь 965417533 не имеет премиум-пробников.
-2025-01-07 16:50:50,126 - __main__ - INFO - Пользователь 965417533 имеет премиум доступ: False
-2025-01-07 16:51:03,093 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-07 16:51:03,512 - __main__ - INFO - Пользователь 965417533 не имеет премиум-пробников.
-2025-01-07 16:51:03,619 - __main__ - INFO - Пользователь 965417533 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:51:06,265 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 965417533
-2025-01-07 16:51:17,716 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-07 16:51:18,138 - __main__ - INFO - Пользователь 965417533 не имеет премиум-пробников.
-2025-01-07 16:51:18,217 - __main__ - INFO - Пользователь 965417533 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:51:20,298 - __main__ - INFO - Получен CallbackQuery: variant_special_math от пользователя: 965417533
-2025-01-07 16:51:20,776 - __main__ - INFO - Пользователь 965417533 не имеет доступа к премиум-пробникам для предмета Математика.
-2025-01-07 16:51:24,209 - __main__ - INFO - Получен CallbackQuery: subject_math от пользователя: 965417533
-2025-01-07 16:51:24,607 - __main__ - INFO - Пользователь 965417533 не имеет премиум-пробников.
-2025-01-07 16:51:24,695 - __main__ - INFO - Пользователь 965417533 выбирает предмет math. Премиум доступ: False
-2025-01-07 16:51:26,422 - __main__ - INFO - Получен CallbackQuery: variant_free_math от пользователя: 965417533
-2025-01-07 16:52:12,533 - __main__ - INFO - Пользователь 965417533 не имеет премиум-пробников.
-2025-01-07 16:52:12,629 - __main__ - INFO - Пользователь 965417533 имеет премиум доступ: False
-2025-01-07 17:05:03,831 - __main__ - INFO - Дерекқор инициализацияланды.
-2025-01-07 17:06:15,304 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:06:32,417 - __main__ - INFO - CallbackQuery қабылданды: skip_photo пайдаланушыдан: 1044841557
-2025-01-07 17:18:33,933 - __main__ - INFO - Дерекқор инициализацияланды.
-2025-01-07 17:20:59,064 - __main__ - INFO - Дерекқор инициализацияланды.
-2025-01-07 17:21:06,143 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
-2025-01-07 17:21:06,240 - __main__ - INFO - Пайдаланушы 1044841557 премиум қолжетімділікке ие: False
-2025-01-07 17:21:13,893 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
-2025-01-07 17:21:14,266 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
-2025-01-07 17:21:14,360 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Премиум қолжетімділік: False
-2025-01-07 17:21:16,151 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1044841557
-2025-01-07 17:21:16,390 - __main__ - INFO - Пайдаланушы 1044841557 админ болып табылады.
-2025-01-07 17:21:19,246 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
-2025-01-07 17:21:19,599 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
-2025-01-07 17:21:19,695 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Премиум қолжетімділік: False
-2025-01-07 17:21:21,778 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1044841557
-2025-01-07 17:21:22,164 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
-2025-01-07 17:21:22,255 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Премиум қолжетімділік: False
-2025-01-07 17:21:28,902 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
-2025-01-07 17:21:29,004 - __main__ - INFO - Пайдаланушы 1044841557 премиум қолжетімділікке ие: False
-2025-01-07 17:21:31,273 - __main__ - INFO - Пайдаланушының 1044841557 алдыңғы мәзірі жойылды.
-2025-01-07 17:24:09,805 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:24:18,331 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:25:09,833 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:25:18,107 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:25:32,931 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:26:03,491 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 3 адам.
-2025-01-07 17:27:28,634 - __main__ - INFO - Пайдаланушы 1727718224 премиум пробниктерге ие емес.
-2025-01-07 17:27:28,724 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: False
-2025-01-07 17:27:31,983 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
-2025-01-07 17:27:36,809 - __main__ - INFO - CallbackQuery қабылданды: main_menu пайдаланушыдан: 1727718224
-2025-01-07 17:27:37,181 - __main__ - INFO - Пайдаланушы 1727718224 премиум пробниктерге ие емес.
-2025-01-07 17:27:37,282 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: False
-2025-01-07 17:27:39,106 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
-2025-01-07 17:27:39,616 - __main__ - INFO - Пайдаланушы 1727718224 премиум пробниктерге ие емес.
-2025-01-07 17:27:39,703 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: False
-2025-01-07 17:27:40,954 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
-2025-01-07 17:27:43,657 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
-2025-01-07 17:27:44,015 - __main__ - INFO - Пайдаланушы 1727718224 премиум пробниктерге ие емес.
-2025-01-07 17:27:44,106 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: False
-2025-01-07 17:27:45,517 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
-2025-01-07 17:27:45,853 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
-2025-01-07 17:27:47,982 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
-2025-01-07 17:27:48,356 - __main__ - INFO - Пайдаланушы 1727718224 премиум пробниктерге ие емес.
-2025-01-07 17:27:48,453 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: False
-2025-01-07 17:27:50,237 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
-2025-01-07 17:27:50,491 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-08 19:56:12,774 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:56:13,195 - __main__ - INFO - User 1727718224 next_free_time: 2025-01-08 14:01:20.752359+00:00, current time: 2025-01-08 14:56:12.954578
+2025-01-08 19:56:13,197 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 403, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 19:56:13,684 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-08 14:57:12.954578.
+2025-01-08 19:56:19,424 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-08 19:56:19,765 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділігі жоқ немесе лимит таусылды.
+2025-01-08 19:56:22,037 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-08 19:56:22,469 - __main__ - INFO - User 1727718224 next_free_time: 2025-01-08 09:57:12.954578+00:00, current time: 2025-01-08 14:56:22.348947
+2025-01-08 19:56:22,471 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 403, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 19:56:22,827 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-08 14:57:22.348947.
+2025-01-08 19:56:23,501 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-08 19:56:23,808 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:23,868 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-08 19:56:27,681 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:56:28,155 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-08 19:56:28,219 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-08 19:56:29,387 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-08 19:56:29,735 - __main__ - INFO - User 1727718224 next_free_time: 2025-01-08 13:41:49.304889+00:00, current time: 2025-01-08 14:56:29.612238
+2025-01-08 19:56:29,736 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 403, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-08 19:56:30,025 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Информатика, уақыт 2025-01-08 14:57:29.612238.
+2025-01-08 20:06:55,825 - __main__ - INFO - База данных инициализирована.
+2025-01-08 20:07:20,390 - __main__ - INFO - Пользователь 1727718224 имеет 10 премиум пробников.
+2025-01-08 20:07:20,451 - __main__ - INFO - Пользователь 1727718224 имеет премиум доступ: True
+2025-01-09 22:48:53,428 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 22:49:18,633 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:18,719 - __main__ - INFO - Пайдаланушы 1044841557 премиум қолжетімділікке ие: False
+2025-01-09 22:49:24,382 - __main__ - INFO - CallbackQuery қабылданды: help пайдаланушыдан: 1044841557
+2025-01-09 22:49:27,974 - __main__ - INFO - CallbackQuery қабылданды: main_menu пайдаланушыдан: 1044841557
+2025-01-09 22:49:28,557 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:28,646 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Премиум қолжетімділік: False
+2025-01-09 22:49:31,166 - __main__ - INFO - CallbackQuery қабылданды: help пайдаланушыдан: 1044841557
+2025-01-09 22:49:36,764 - __main__ - INFO - CallbackQuery қабылданды: main_menu пайдаланушыдан: 1044841557
+2025-01-09 22:49:37,138 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:37,223 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Премиум қолжетімділік: False
+2025-01-09 22:49:38,911 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-09 22:49:39,412 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:39,520 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Премиум қолжетімділік: False
+2025-01-09 22:49:44,134 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-09 22:49:49,049 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-09 22:49:49,558 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:49,649 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Премиум қолжетімділік: False
+2025-01-09 22:49:51,210 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1044841557
+2025-01-09 22:49:54,655 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-09 22:49:55,256 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:49:55,355 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Премиум қолжетімділік: False
+2025-01-09 22:49:57,069 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1044841557
+2025-01-09 22:50:07,072 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1044841557
+2025-01-09 22:50:07,477 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:50:07,684 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: informatics. Премиум қолжетімділік: False
+2025-01-09 22:50:09,481 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1044841557
+2025-01-09 22:50:09,950 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:50:10,051 - __main__ - INFO - Пайдаланушы 1044841557 негізгі мәзірге оралады. Премиум қолжетімділік: False
+2025-01-09 22:50:12,206 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1044841557
+2025-01-09 22:50:12,611 - __main__ - INFO - Пайдаланушы 1044841557 премиум пробниктерге ие емес.
+2025-01-09 22:50:12,724 - __main__ - INFO - Пайдаланушы 1044841557 пәнді таңдайды: math. Премиум қолжетімділік: False
+2025-01-09 22:50:14,651 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1044841557
+2025-01-09 22:50:15,059 - __main__ - INFO - Пайдаланушы 1044841557 админ болып табылады.
+2025-01-09 22:51:40,054 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:51:40,151 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 22:51:42,820 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:51:43,319 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:51:43,412 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 22:51:44,763 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:51:47,426 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:51:47,930 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:51:48,041 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 22:51:49,372 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:51:54,642 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 22:51:55,111 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:51:55,203 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 22:51:56,028 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-09 22:51:56,437 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-09 22:51:59,816 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:52:00,217 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:52:00,312 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 22:52:01,661 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 22:52:02,066 - __main__ - INFO - Пайдаланушы 1727718224 админ болып табылады.
+2025-01-09 22:52:30,092 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 22:52:43,417 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:52:43,511 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 22:52:45,001 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:52:45,083 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 22:52:52,654 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:52:53,072 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:52:53,161 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 22:52:54,450 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:52:55,419 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 443, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:52:56,237 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-10 22:52:54.807081.
+2025-01-09 22:54:18,550 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 22:54:29,338 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:54:29,523 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 22:54:44,683 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:54:45,138 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:54:45,292 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 22:54:47,037 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:54:47,852 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:54:48,471 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-10 22:54:47.299441.
+2025-01-09 22:54:56,664 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:54:57,265 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:54:57,774 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-10 22:54:57.069673.
+2025-01-09 22:55:16,307 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:55:16,841 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:55:17,323 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-10 22:55:16.656565.
+2025-01-09 22:56:18,340 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 22:56:18,882 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:56:19,393 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Математика, уақыт 2025-01-10 22:56:18.686308.
+2025-01-09 22:56:20,219 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 22:56:20,842 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділігі жоқ немесе лимит таусылды.
+2025-01-09 22:56:22,897 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-09 22:56:23,323 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:56:23,421 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-09 22:56:31,279 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 22:56:31,689 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:56:31,787 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 22:56:33,434 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 22:56:34,042 - __main__ - ERROR - Тегін нұсқаны орындау қатесі:
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 401, in handle_free_variant
+    if next_free_time and now < next_free_time:
+                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-01-09 22:56:34,486 - __main__ - INFO - Кулдаун жаңартылды: Пайдаланушы 1727718224, пән Информатика, уақыт 2025-01-10 22:56:33.840773.
+2025-01-09 22:56:35,478 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-09 22:56:35,997 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділігі жоқ немесе лимит таусылды.
+2025-01-09 22:57:18,871 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-09 22:58:34,775 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-09 22:58:35,297 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:58:35,592 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-09 22:58:38,461 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 22:58:38,979 - __main__ - INFO - Пайдаланушы 1727718224 10 премиум пробниктерге ие.
+2025-01-09 22:58:39,176 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:08:48,395 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 23:08:51,259 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 23:08:59,028 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:08:59,633 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:01,163 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:04,541 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:05,153 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:07,081 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:10,790 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:11,445 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:12,838 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:15,295 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:15,905 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:17,763 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:20,825 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:21,433 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:22,770 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:25,879 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:26,642 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:09:28,198 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:09:31,583 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:09:32,124 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:09:34,342 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:09:37,414 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:09:38,043 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:09:39,233 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:09:46,606 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-09 23:10:05,059 - __main__ - INFO - Барлық пайдаланушыларға хабарлама жіберілуде: 4 адам.
+2025-01-09 23:10:07,331 - __main__ - ERROR - Пайдаланушыға хабарлама жіберу кезінде қате: 520176143 - Telegram server says - Forbidden: bot was blocked by the user
+2025-01-09 23:10:32,912 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 23:10:38,032 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 23:10:39,481 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:10:40,080 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:10:41,929 - __main__ - INFO - CallbackQuery қабылданды: back_subjects пайдаланушыдан: 1727718224
+2025-01-09 23:10:42,582 - __main__ - INFO - Пайдаланушы 1727718224 негізгі мәзірге оралады. Премиум қолжетімділік: True
+2025-01-09 23:10:44,077 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:10:44,686 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:10:46,228 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:10:49,709 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:10:50,322 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:10:52,167 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:10:56,682 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:11:00,051 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:11:00,870 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:11:02,507 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:11:40,705 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:11:41,537 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:11:43,067 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:11:47,587 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:11:48,191 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:11:49,464 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:11:53,198 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:11:53,806 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:11:56,990 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:11:59,474 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:12:00,261 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:12:04,871 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:12:18,084 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:12:19,186 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:12:20,538 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:12:54,727 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:12:55,453 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:12:57,002 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:13:00,169 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:13:00,915 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:13:02,406 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:24:52,262 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 23:25:03,525 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 23:25:05,511 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:06,088 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:25:07,522 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:10,725 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:11,382 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:25:12,848 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:16,738 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:19,605 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:23,634 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:25:24,158 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:25:25,749 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:09,808 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:10,409 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:26:11,832 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:14,390 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:15,180 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:26:16,549 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:18,803 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:19,271 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:26:20,740 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:24,733 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:25,344 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:26:26,982 - __main__ - INFO - CallbackQuery қабылданды: variant_free_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:39,171 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:39,777 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:26:41,217 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:44,086 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:44,697 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:26:46,236 - __main__ - INFO - CallbackQuery қабылданды: variant_free_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:26:53,201 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:26:53,702 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:26:57,213 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:27:01,085 - __main__ - INFO - CallbackQuery қабылданды: subject_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:27:01,798 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: informatics. Премиум қолжетімділік: True
+2025-01-09 23:27:03,223 - __main__ - INFO - CallbackQuery қабылданды: variant_special_informatics пайдаланушыдан: 1727718224
+2025-01-09 23:33:44,452 - __main__ - INFO - Дерекқор инициализацияланды.
+2025-01-09 23:37:11,886 - __main__ - INFO - Пайдаланушының 1727718224 алдыңғы мәзірі жойылды.
+2025-01-09 23:37:22,760 - __main__ - INFO - Пайдаланушы 1727718224 премиум қолжетімділікке ие: True
+2025-01-09 23:37:25,204 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:37:26,454 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:37:28,088 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:01,164 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:01,762 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:38:03,929 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:51,366 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:51,812 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:38:53,389 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:57,791 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:38:58,401 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:39:00,863 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:40:50,332 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:40:50,951 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:40:52,481 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:43:21,782 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:43:24,441 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:43:25,162 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:44:59,268 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:44:59,863 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:45:01,520 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:45:04,593 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:45:05,185 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:45:08,382 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:54:10,904 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:54:14,065 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:54:14,099 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:54:15,237 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:54:15,312 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-09 23:54:15,534 - __main__ - ERROR - Хабарламаны өңдеу кезінде қате: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 184, in safe_edit_text
+    await callback.message.edit_text(text=text, parse_mode=parse_mode, reply_markup=reply_markup)
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-01-09 23:54:16,946 - __main__ - ERROR - Хабарламаны өңдеу кезінде қате: Bad Request: message to edit not found
+Traceback (most recent call last):
+  File "c:\Users\Maksa\TG_BOT\TG_BOT\bot.py", line 184, in safe_edit_text
+    await callback.message.edit_text(text=text, parse_mode=parse_mode, reply_markup=reply_markup)
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maksa\TG_BOT\TG_BOT\venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message to edit not found
+2025-01-09 23:59:18,007 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-09 23:59:19,848 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-09 23:59:21,386 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 00:00:52,326 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 00:00:52,956 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 00:00:54,160 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 00:00:59,998 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 00:01:00,711 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 00:01:02,152 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 00:02:03,284 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 00:02:03,881 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 00:02:05,433 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224
+2025-01-10 00:02:08,507 - __main__ - INFO - CallbackQuery қабылданды: subject_math пайдаланушыдан: 1727718224
+2025-01-10 00:02:09,207 - __main__ - INFO - Пайдаланушы 1727718224 пәнді таңдайды: math. Премиум қолжетімділік: True
+2025-01-10 00:02:11,271 - __main__ - INFO - CallbackQuery қабылданды: variant_special_math пайдаланушыдан: 1727718224

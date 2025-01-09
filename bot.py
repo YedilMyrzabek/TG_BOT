@@ -55,7 +55,7 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
 # 5. Админдердің тізімі (немесе жиыны)
-ADMIN_IDS = {1044841557, 1727718224}  # <-- қажетті Telegram user_id
+ADMIN_IDS = {1044841557}  # <-- необходимые Telegram user_id
 
 # 6. Asyncpg арқылы дерекқорға қосылу
 async def get_db_pool():
@@ -64,6 +64,7 @@ async def get_db_pool():
 # 7. Дерекқорды инициализациялау
 async def initialize_db(pool):
     async with pool.acquire() as conn:
+        # ТАБЛИЦА users
         await conn.execute("""
             CREATE TABLE IF NOT EXISTS users (
                 user_id BIGINT PRIMARY KEY,
@@ -73,24 +74,35 @@ async def initialize_db(pool):
                 joined_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
         """)
+
+        # ТАБЛИЦА user_cooldowns (обновлённая)
+        # Храним кулдаун отдельно для бесплатных и премиум-пробников, по каждому предмету
         await conn.execute("""
-            CREATE TABLE IF NOT EXISTS user_cooldown (
+            CREATE TABLE IF NOT EXISTS user_cooldowns (
                 user_id BIGINT,
                 subject_name TEXT,
                 next_free_time TIMESTAMP,
+                next_premium_time TIMESTAMP,
                 PRIMARY KEY (user_id, subject_name)
             );
         """)
+
+        # ТАБЛИЦА user_access
+        # Для бесплатных пробников: access_type='free', remaining_count (макс 5),
+        # last_test_id хранит последний выданный бесплатный тест
+        # Для премиум: access_type='special', remaining_count > 0
         await conn.execute("""
             CREATE TABLE IF NOT EXISTS user_access (
                 user_id BIGINT,
                 subject_name TEXT,
                 access_type TEXT,
                 remaining_count INTEGER,
-                last_premium_test_id INTEGER DEFAULT 0,
+                last_test_id INTEGER DEFAULT 0,
                 PRIMARY KEY (user_id, subject_name, access_type)
             );
         """)
+
+        # ТАБЛИЦА tests (бесплатные)
         await conn.execute("""
             CREATE TABLE IF NOT EXISTS tests (
                 id SERIAL PRIMARY KEY,
@@ -99,6 +111,8 @@ async def initialize_db(pool):
                 file_url TEXT
             );
         """)
+
+        # ТАБЛИЦА premium_tests (премиум)
         await conn.execute("""
             CREATE TABLE IF NOT EXISTS premium_tests (
                 id SERIAL PRIMARY KEY,
@@ -108,6 +122,10 @@ async def initialize_db(pool):
                 file_url TEXT
             );
         """)
+
+        # Инициализация: чтобы новым пользователям автоматически давать 5 бесплатных пробников
+        # Вы можете это делать при регистрации пользователя (в момент /start).
+        # Либо можно выдавать при первом запросе на бесплатный тест - на ваше усмотрение.
 
 # 8. Дерекқор қосылым пулын инициализациялау
 pool = None
@@ -206,6 +224,22 @@ async def send_welcome(message: Message):
             await message.answer("❌ Тіркеу кезінде қате пайда болды. Өтінеміз, кейінірек қайта көріңіз.")
             return
 
+        # Дополнительно: если у пользователя нет ещё записи о бесплатном доступе, выдаём ему 5
+        subjects = ["Математика", "Информатика"]
+        for subj in subjects:
+            # Проверяем, есть ли запись 'free' для данного пользователя
+            record = await conn.fetchrow("""
+                SELECT remaining_count
+                FROM user_access
+                WHERE user_id=$1 AND subject_name=$2 AND access_type='free'
+            """, user_id, subj)
+            # Если нет, создаём
+            if not record:
+                await conn.execute("""
+                    INSERT INTO user_access (user_id, subject_name, access_type, remaining_count, last_test_id)
+                    VALUES ($1, $2, 'free', 5, 0)
+                """, user_id, subj)
+
     # Пайдаланушының премиум қолжетімділігін тексеру
     has_premium_access = await check_premium_access(user_id)
     logger.info(f"Пайдаланушы {user_id} премиум қолжетімділікке ие: {has_premium_access}")
@@ -214,9 +248,8 @@ async def send_welcome(message: Message):
     welcome_text = (
         "👋 Сәлеметсіз бе! \n\n"
         "Біз сізге Математика және Информатика пәндер бойынша үздік пробниктерді ұсынамыз.\n\n"
-        "🔍 Бесплатные пробниктер арқылы дайындалыңыз және өз деңгейіңізді арттырыңыз.\n\n"
-        "💎 Премиум пробниктер арқылы ұбтда кездескен(слив) және алдағы уақытта кездесуі мүмкін нұсқалармен өзіңізді сынап көріңіз.\n\n"
-        "p.s келесі нұсқаны 24 сағаттан соң ала аласыз🤓.\n\n"
+        "🔍 Бесплатные пробниктер арқылы дайындалыңыз (әр пәнге 5 рет тегін).\n\n"
+        "💎 Премиум пробниктер арқылы қосымша тапсырмаларды ала аласыз.\n\n"
         "ℹ️ Қосымша сұрақтар бойынша /help."
     )
 
@@ -231,15 +264,13 @@ async def check_premium_access(user_id: int) -> bool:
     """Пайдаланушының премиум пробниктерге қолжетімділігін тексереді."""
     async with pool.acquire() as conn:
         access = await conn.fetchrow("""
-            SELECT remaining_count, last_premium_test_id FROM user_access
+            SELECT remaining_count FROM user_access
             WHERE user_id = $1 AND access_type = 'special' AND remaining_count > 0
             LIMIT 1
         """, user_id)
         if access:
-            logger.info(f"Пайдаланушы {user_id} {access['remaining_count']} премиум пробниктерге ие.")
             return True
         else:
-            logger.info(f"Пайдаланушы {user_id} премиум пробниктерге ие емес.")
             return False
 
 # Пайдаланушылар санын көрсету
@@ -348,20 +379,22 @@ async def handle_free_variant(callback: CallbackQuery, subject_code: str):
 
     async with pool.acquire() as conn:
         try:
-            # Егер пайдаланушы админ болса, шектеулерді елемейді
+            # Если пользователь админ — без ограничений
             if user_id in ADMIN_IDS:
-                test = await conn.fetchrow(
-                    "SELECT file_name, file_url FROM tests WHERE subject = $1 ORDER BY RANDOM() LIMIT 1",
-                    subject_name
-                )
+                test = await conn.fetchrow("""
+                    SELECT id, file_name, file_url
+                    FROM tests
+                    WHERE subject = $1
+                    ORDER BY RANDOM() LIMIT 1
+                """, subject_name)
                 if test:
                     file_name, file_url = test["file_name"], test["file_url"]
                     await bot.send_document(
                         chat_id=user_id,
                         document=file_url,
-                        caption=f"📄 *Тегін нұсқа:* {file_name}",
+                        caption=f"📄 *Тегін нұсқа (админ)*: {file_name}",
                         parse_mode="Markdown",
-                        protect_content=True  # Пересылуға тыйым салу
+                        protect_content=True
                     )
                 else:
                     await callback.message.answer(
@@ -369,7 +402,6 @@ async def handle_free_variant(callback: CallbackQuery, subject_code: str):
                         parse_mode="Markdown",
                         reply_markup=get_subjects_keyboard()
                     )
-                # Тест жіберілгеннен кейін мәзірді жаңарту
                 await safe_edit_text(
                     callback,
                     text="👋 Сәлеметсіз бе! \n\nПәнді таңдаңыз:",
@@ -378,88 +410,101 @@ async def handle_free_variant(callback: CallbackQuery, subject_code: str):
                 )
                 return
 
-            # Премиум қолжетімділіктің бар-жоғын тексеру
-            special_access = await conn.fetchrow("""
-                SELECT remaining_count, last_premium_test_id 
+            # Проверяем кулдаун для бесплатных тестов
+            cooldown_record = await conn.fetchrow("""
+                SELECT next_free_time FROM user_cooldowns
+                WHERE user_id=$1 AND subject_name=$2
+            """, user_id, subject_name)
+
+            if cooldown_record and cooldown_record["next_free_time"]:
+                next_free_time = cooldown_record["next_free_time"]
+                if now < next_free_time:
+                    diff = next_free_time - now
+                    seconds = int(diff.total_seconds())
+                    await callback.message.answer(
+                        f"⏳ *Сіз келесі тегін пробникті {seconds} секундтан кейін ала аласыз.*",
+                        parse_mode="Markdown",
+                        reply_markup=get_subjects_keyboard()
+                    )
+                    return
+
+            # Смотрим, остались ли бесплатные тесты
+            free_access = await conn.fetchrow("""
+                SELECT remaining_count, last_test_id
                 FROM user_access
-                WHERE user_id = $1 AND subject_name = $2 AND access_type = 'special'
+                WHERE user_id=$1 AND subject_name=$2 AND access_type='free'
             """, user_id, subject_name)
 
-            if special_access and special_access["remaining_count"] > 0:
+            if not free_access or free_access["remaining_count"] <= 0:
                 await callback.message.answer(
-                    "💎 *Сізде премиум қолжетімділік бар, тегін тесттерді алу мүмкіндігі жоқ.*",
+                    f"❌ Сіз *{subject_name}* пәні бойынша 5 тегін пробникті бітірдіңіз!",
                     parse_mode="Markdown",
                     reply_markup=get_subjects_keyboard()
                 )
                 return
 
-            # Кулдаунды тексеру
-            next_free_time = await conn.fetchval("""
-                SELECT next_free_time FROM user_cooldown WHERE user_id = $1 AND subject_name = $2
-            """, user_id, subject_name)
+            last_test_id = free_access["last_test_id"]
 
-            if next_free_time and now < next_free_time:
-                diff = next_free_time - now
-                hours = diff.seconds // 3600
-                minutes = (diff.seconds % 3600) // 60
-                seconds = diff.seconds % 60
+            # Выбираем следующий бесплатный тест с ID > last_test_id (чтобы не повторять один и тот же)
+            test = await conn.fetchrow("""
+                SELECT id, file_name, file_url
+                FROM tests
+                WHERE subject = $1 AND id > $2
+                ORDER BY id ASC
+                LIMIT 1
+            """, subject_name, last_test_id)
+
+            # Если нет теста с ID > last_test_id, пробуем взять самый маленький ID, если last_test_id уже превышает все имеющиеся
+            # (Но если хотим строго по порядку - тогда просто скажем, что больше нет.)
+            # Для упрощения: если всё уже было выдано, сообщаем, что тестов нет.
+            if not test:
                 await callback.message.answer(
-                    f"⏳ *Сіз осы бөлімнің тегін нұсқасын {hours} сағат {minutes} минут {seconds} секундтан кейін ғана ала аласыз.*",
+                    f"❌ Басқа тегін пробниктер жоқ (ID-лер таусылды).",
                     parse_mode="Markdown",
                     reply_markup=get_subjects_keyboard()
                 )
                 return
 
-            # Случайный тегін тест
-            test = await conn.fetchrow(
-                "SELECT file_name, file_url FROM tests WHERE subject = $1 ORDER BY RANDOM() LIMIT 1",
-                subject_name
+            # Отправляем файл
+            test_id = test["id"]
+            file_name, file_url = test["file_name"], test["file_url"]
+            await bot.send_document(
+                chat_id=user_id,
+                document=file_url,
+                caption=f"📄 *Тегін нұсқа:* {file_name}",
+                parse_mode="Markdown",
+                protect_content=True
             )
-            if test:
-                file_name, file_url = test["file_name"], test["file_url"]
-                await bot.send_document(
-                    chat_id=user_id,
-                    document=file_url,
-                    caption=f"📄 *Тегін нұсқа:* {file_name}",
-                    parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
-                )
-                # Тест жіберілгеннен кейін мәзірді жаңарту
-                await safe_edit_text(
-                    callback,
-                    text="👋 Сәлеметсіз бе! \n\nПәнді таңдаңыз:",
-                    parse_mode="Markdown",
-                    reply_markup=get_subjects_keyboard()
-                )
-            else:
-                await callback.message.answer(
-                    f"❌ Кешіріңіз, *{subject_name}* бойынша тегін пробниктер жоқ.",
-                    parse_mode="Markdown",
-                    reply_markup=get_subjects_keyboard()
-                )
+            await safe_edit_text(
+                callback,
+                text="👋 Сәлеметсіз бе! \n\nПәнді таңдаңыз:",
+                parse_mode="Markdown",
+                reply_markup=get_subjects_keyboard()
+            )
+
+            # Обновляем last_test_id и уменьшаем remaining_count
+            await conn.execute("""
+                UPDATE user_access
+                SET last_test_id=$1,
+                    remaining_count=remaining_count-1
+                WHERE user_id=$2 AND subject_name=$3 AND access_type='free'
+            """, test_id, user_id, subject_name)
+
+            # Обновляем кулдаун: 1 минута
+            new_time = now + datetime.timedelta(minutes=1)
+            await conn.execute("""
+                INSERT INTO user_cooldowns (user_id, subject_name, next_free_time, next_premium_time)
+                VALUES ($1, $2, $3, NULL)
+                ON CONFLICT (user_id, subject_name)
+                DO UPDATE SET next_free_time=EXCLUDED.next_free_time
+            """, user_id, subject_name, new_time)
+
         except TelegramBadRequest as e:
             logger.error(f"TelegramBadRequest қатесі: {e.message}", exc_info=True)
             await callback.message.answer("❌ Сұрауды өңдеу кезінде қате пайда болды.")
         except Exception as e:
             logger.error("Тегін нұсқаны орындау қатесі:", exc_info=True)
             await callback.message.answer("❌ Қате пайда болды. Админге жазыңыз.")
-
-        # Кулдаунды жаңарту, егер пайдаланушы админ болмаса
-        if user_id not in ADMIN_IDS:
-            new_time = now + datetime.timedelta(hours=24)  # Кулдаунды 24 сағатқа орнату
-            try:
-                await conn.execute(
-                    """
-                    INSERT INTO user_cooldown (user_id, subject_name, next_free_time)
-                    VALUES ($1, $2, $3)
-                    ON CONFLICT (user_id, subject_name)
-                    DO UPDATE SET next_free_time = EXCLUDED.next_free_time
-                    """,
-                    user_id, subject_name, new_time
-                )
-                logger.info(f"Кулдаун жаңартылды: Пайдаланушы {user_id}, пән {subject_name}, уақыт {new_time}.")
-            except Exception as e:
-                logger.error("Кулдаунды жаңарту қатесі:", exc_info=True)
 
 # Премиум пробникті өңдеу
 async def handle_special_variant(callback: CallbackQuery, subject_code: str, access_type: str):
@@ -470,13 +515,20 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
     }
     subject_name = subject_map.get(subject_code, "Белгісіз")
 
+    now = datetime.datetime.now()
+
     async with pool.acquire() as conn:
         try:
             # Егер пайдаланушы админ болса, шектеулерді елемейді
             if user_id in ADMIN_IDS:
-                logger.info(f"Пайдаланушы {user_id} админ болып табылады.")
                 test = await conn.fetchrow(
-                    "SELECT file_name, file_url FROM premium_tests WHERE subject = $1 AND access_type = $2 ORDER BY RANDOM() LIMIT 1",
+                    """
+                    SELECT id, file_name, file_url 
+                    FROM premium_tests
+                    WHERE subject = $1 AND access_type = $2
+                    ORDER BY RANDOM()
+                    LIMIT 1
+                    """,
                     subject_name, access_type
                 )
                 if test:
@@ -484,9 +536,9 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
                     await bot.send_document(
                         chat_id=user_id,
                         document=file_url,
-                        caption=f"💎 *Премиум нұсқа:* {file_name}",
+                        caption=f"💎 *Премиум нұсқа (админ)*: {file_name}",
                         parse_mode="Markdown",
-                        protect_content=True  # Пересылуға тыйым салу
+                        protect_content=True
                     )
                 else:
                     await callback.message.answer(
@@ -503,16 +555,33 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
                 )
                 return
 
+            # Кулдаун для премиум
+            cooldown_record = await conn.fetchrow("""
+                SELECT next_premium_time
+                FROM user_cooldowns
+                WHERE user_id=$1 AND subject_name=$2
+            """, user_id, subject_name)
+
+            if cooldown_record and cooldown_record["next_premium_time"]:
+                next_premium_time = cooldown_record["next_premium_time"]
+                if now < next_premium_time:
+                    diff = next_premium_time - now
+                    seconds = int(diff.total_seconds())
+                    await callback.message.answer(
+                        f"⏳ *Сіз келесі премиум-пробникті {seconds} секундтан кейін ала аласыз.*",
+                        parse_mode="Markdown",
+                        reply_markup=get_subjects_keyboard()
+                    )
+                    return
+
             # Пайдаланушының премиум қолжетімділігін тексеру
             access = await conn.fetchrow("""
-                SELECT remaining_count, last_premium_test_id 
+                SELECT remaining_count, last_test_id
                 FROM user_access
                 WHERE user_id = $1 AND subject_name = $2 AND access_type = $3
-                LIMIT 1
             """, user_id, subject_name, access_type)
 
             if not access or access["remaining_count"] <= 0:
-                logger.info(f"Пайдаланушы {user_id} премиум қолжетімділігі жоқ немесе лимит таусылды.")
                 await callback.message.answer(
                     "💰 *Бұл нұсқаға қолжетімділік жоқ. Бағасы 990 тг. Сатып алу үшін админдерге жазыңыз:* \n\n"
                     "📱 [Админ 1](https://t.me/maxxsikxx) \n"
@@ -524,10 +593,9 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
                 return
 
             remaining_count = access["remaining_count"]
-            last_premium_test_id = access["last_premium_test_id"]
-            logger.info(f"Пайдаланушы {user_id} {remaining_count} премиум пробниктерге ие. Соңғы тест ID: {last_premium_test_id}")
+            last_premium_test_id = access["last_test_id"]
 
-            # Келесі премиум тестті алу
+            # Берем следующий премиум тест
             test = await conn.fetchrow("""
                 SELECT id, file_name, file_url 
                 FROM premium_tests
@@ -536,57 +604,53 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
                 LIMIT 1
             """, subject_name, access_type, last_premium_test_id)
 
-            if test:
-                test_id, file_name, file_url = test["id"], test["file_name"], test["file_url"]
-                await bot.send_document(
-                    chat_id=user_id,
-                    document=file_url,
-                    caption=f"💎 *Премиум нұсқа:* {file_name}",
-                    parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
-                )
-                # Тест жіберілгеннен кейін мәзірді жаңарту
-                await safe_edit_text(
-                    callback,
-                    text="👋 Сәлеметсіз бе! \n\nПәнді таңдаңыз:",
-                    parse_mode="Markdown",
-                    reply_markup=get_subjects_keyboard()
-                )
-                # 'last_premium_test_id' жаңарту және 'remaining_count' азайту
-                await conn.execute("""
-                    UPDATE user_access
-                    SET remaining_count = remaining_count - 1,
-                        last_premium_test_id = $1
-                    WHERE user_id = $2 AND subject_name = $3 AND access_type = $4
-                """, test_id, user_id, subject_name, access_type)
-                logger.info(f"Пайдаланушы {user_id} премиум-пробникті алды: ID {test_id}. Қалған: {remaining_count - 1}")
-            else:
-                logger.warning(f"Премиум-пробниктер табылмады: Пән {subject_name}, Қолжетімділік {access_type}")
+            # Аналогично: если test нет (ID закончились), сообщаем
+            if not test:
                 await callback.message.answer(
-                    f"❌ Бұл пән бойынша премиум нұсқалар әлі жоқ.",
+                    f"❌ Бұл пән бойынша қолжетімді премиум-нұсқалар таусылды.",
                     parse_mode="Markdown",
                     reply_markup=get_subjects_keyboard()
                 )
+                return
+
+            test_id, file_name, file_url = test["id"], test["file_name"], test["file_url"]
+            await bot.send_document(
+                chat_id=user_id,
+                document=file_url,
+                caption=f"💎 *Премиум нұсқа:* {file_name}",
+                parse_mode="Markdown",
+                protect_content=True
+            )
+            # Тест жіберілгеннен кейін мәзірді жаңарту
+            await safe_edit_text(
+                callback,
+                text="👋 Сәлеметсіз бе! \n\nПәнді таңдаңыз:",
+                parse_mode="Markdown",
+                reply_markup=get_subjects_keyboard()
+            )
+            # 'last_test_id' жаңарту және 'remaining_count' азайту
+            await conn.execute("""
+                UPDATE user_access
+                SET remaining_count = remaining_count - 1,
+                    last_test_id = $1
+                WHERE user_id = $2 AND subject_name = $3 AND access_type = $4
+            """, test_id, user_id, subject_name, access_type)
+
+            # Обновляем кулдаун: 1 минута
+            new_time = now + datetime.timedelta(minutes=1)
+            await conn.execute("""
+                INSERT INTO user_cooldowns (user_id, subject_name, next_free_time, next_premium_time)
+                VALUES ($1, $2, NULL, $3)
+                ON CONFLICT (user_id, subject_name)
+                DO UPDATE SET next_premium_time=EXCLUDED.next_premium_time
+            """, user_id, subject_name, new_time)
+
         except TelegramBadRequest as e:
             logger.error(f"TelegramBadRequest қатесі: {e.message}", exc_info=True)
             await callback.message.answer("❌ Сұрауды өңдеу кезінде қате пайда болды.")
         except Exception as e:
             logger.error("Премиум нұсқаны орындау қатесі:", exc_info=True)
             await callback.message.answer("❌ Қате пайда болды (Премиум нұсқа).")
-
-        # Кулдаунды жаңарту, егер пайдаланушы админ болмаса
-        if user_id not in ADMIN_IDS and access and access["remaining_count"] > 0:
-            try:
-                await conn.execute(
-                    """
-                    UPDATE user_access
-                    SET remaining_count = remaining_count - 1
-                    WHERE user_id = $1 AND subject_name = $2 AND access_type = $3
-                    """,
-                    user_id, subject_name, access_type
-                )
-            except Exception as e:
-                logger.error("remaining_count жаңарту қатесі:", exc_info=True)
 
 # Администратор файлдарын өңдеу
 async def handle_admin_files(message: Message):
@@ -641,6 +705,7 @@ async def admin_grant_access(message: Message, command: Command):
         "Информатика": "informatics",
     }
 
+    # Проверяем, ввёл ли админ правильно
     if subject not in subject_map_reverse:
         await message.answer("❌ Қате: Белгісіз пән атауы. Қол жетімді пәндер: Математика, Информатика.")
         return
@@ -648,13 +713,14 @@ async def admin_grant_access(message: Message, command: Command):
     access_type = "special"
     additional_premium_tests = 10  # Премиум пробниктер саны
 
+    # Записываем в user_access
     async with pool.acquire() as conn:
         try:
             # Пайдаланушыға премиум пробниктерді қосу
             await conn.execute(
                 """
-                INSERT INTO user_access (user_id, subject_name, access_type, remaining_count)
-                VALUES ($1, $2, $3, $4)
+                INSERT INTO user_access (user_id, subject_name, access_type, remaining_count, last_test_id)
+                VALUES ($1, $2, $3, $4, 0)
                 ON CONFLICT (user_id, subject_name, access_type)
                 DO UPDATE SET remaining_count = user_access.remaining_count + EXCLUDED.remaining_count
                 """,
@@ -667,7 +733,7 @@ async def admin_grant_access(message: Message, command: Command):
                 text=f"🎉 *Құттықтаймыз!* \n\nСізге *{subject}* пәні бойынша 10 премиум пробниктерге қолжетімділік берілді.\n"
                      f"📈 Қосымша ақпарат алу үшін бізге хабарласыңыз.",
                 parse_mode="Markdown",
-                protect_content=True  # Пересылуға тыйым салу
+                protect_content=True
             )
 
             await message.answer(f"✅ Пайдаланушыға *{subject}* пәні бойынша 10 премиум пробниктерге қолжетімділік берілді.",
@@ -689,11 +755,10 @@ async def show_help(message: Message):
     if user_id in user_last_menu_message:
         try:
             await bot.delete_message(chat_id=user_id, message_id=user_last_menu_message[user_id])
-            # Хабарламаның жазбасын жою
             del user_last_menu_message[user_id]
             logger.info(f"Пайдаланушының {user_id} алдыңғы мәзірі жойылды.")
         except TelegramBadRequest:
-            logger.warning(f"Пайдаланушының {user_id} алдыңғы мәзірін жою мүмкін болмады. Мүмкін, хабарлама бұрын жойылған.")
+            logger.warning(f"Пайдаланушының {user_id} алдыңғы мәзірін жою мүмкін болмады.")
 
     if user_id in ADMIN_IDS:
         help_text = (
@@ -712,18 +777,19 @@ async def show_help(message: Message):
     if user_id in ADMIN_IDS:
         keyboard = get_help_keyboard()
     else:
-        # Пайдаланушыға админдердің контактілері көрсетіледі
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="Админ 1", url="https://t.me/maxxsikxx")],
             [InlineKeyboardButton(text="Админ 2", url="https://t.me/x_ae_yedil")],
         ])
 
     sent_message = await message.answer(help_text, parse_mode="Markdown", reply_markup=keyboard)
-
-    # Хабарламаның жазбасын сақтау
     user_last_menu_message[user_id] = sent_message.message_id
 
 # 15. Хабарлама жіберу процесін өңдеу
+
+class AnnouncementStates(StatesGroup):
+    waiting_for_text = State()
+    waiting_for_photo = State()
 
 async def cmd_announce(message: Message, state: FSMContext):
     """Хабарлама жіберу процесін бастайды."""
@@ -748,8 +814,9 @@ async def receive_announcement_photo(callback: CallbackQuery, state: FSMContext)
     data = callback.data
     if data == "add_photo":
         await callback.message.answer("📷 *Суретті жүктеңіз:*", parse_mode="Markdown")
-        await state.set_state(AnnouncementStates.waiting_for_photo)
+        # Оставляем тот же стейт waiting_for_photo, чтобы дождаться фото
     elif data == "skip_photo":
+        # Пропускаем фото
         await proceed_with_announcement(callback, state, photo=None)
     else:
         await callback.answer("❌ Түсініксіз әрекет.", show_alert=False)
@@ -783,14 +850,14 @@ async def proceed_with_announcement(callback: CallbackQuery, state: FSMContext, 
                     photo=photo,
                     caption=announcement_text,
                     parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
+                    protect_content=True
                 )
             else:
                 await bot.send_message(
                     chat_id=uid,
                     text=announcement_text,
                     parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
+                    protect_content=True
                 )
             success += 1
             await asyncio.sleep(0.05)  # Telegram лимиттерін сақтау үшін кідіріс
@@ -800,26 +867,22 @@ async def proceed_with_announcement(callback: CallbackQuery, state: FSMContext, 
             continue
 
     await callback.message.answer(f"✅ Хабарлама жіберілді! \n\nСәтті жіберілді: {success}\nҚателер: {failed}")
-
     await state.clear()
 
 async def receive_announcement_photo_message(message: Message, state: FSMContext):
-    """Админнан хабарламаның суретін алады."""
+    """Админнан хабарламаның суретін алады (сообщением)."""
     user_id = message.from_user.id
     if user_id not in ADMIN_IDS:
         await message.answer("❌ Сізде осы команданы пайдалану құқығы жоқ.")
         return
 
-    if message.photo:
-        photo = message.photo[-1].file_id
-        await proceed_with_announcement_via_message(message, state, photo)
-    else:
-        await proceed_with_announcement_via_message(message, state, photo=None)
-
-async def proceed_with_announcement_via_message(message: Message, state: FSMContext, photo: str = None):
-    """Хабарламаны барлық пайдаланушыларға жібереді (қабылдау арқылы)."""
     data = await state.get_data()
     announcement_text = data.get("announcement_text", "")
+
+    if message.photo:
+        photo = message.photo[-1].file_id
+    else:
+        photo = None
 
     async with pool.acquire() as conn:
         try:
@@ -845,14 +908,14 @@ async def proceed_with_announcement_via_message(message: Message, state: FSMCont
                     photo=photo,
                     caption=announcement_text,
                     parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
+                    protect_content=True
                 )
             else:
                 await bot.send_message(
                     chat_id=uid,
                     text=announcement_text,
                     parse_mode="Markdown",
-                    protect_content=True  # Пересылуға тыйым салу
+                    protect_content=True
                 )
             success += 1
             await asyncio.sleep(0.05)  # Telegram лимиттерін сақтау үшін кідіріс
@@ -862,11 +925,9 @@ async def proceed_with_announcement_via_message(message: Message, state: FSMCont
             continue
 
     await message.answer(f"✅ Хабарлама жіберілді! \n\nСәтті жіберілді: {success}\nҚателер: {failed}")
-
     await state.clear()
 
 # 16. Администратор командаларын тіркеу
-
 async def admin_commands_setup():
     dp.message.register(admin_grant_access, Command("grant_access"))
     dp.message.register(cmd_announce, Command("announce"))
@@ -885,7 +946,6 @@ async def admin_commands_setup():
     dp.message.register(show_help, Command("help"))
 
 # 17. Ботты іске қосу
-
 async def main():
     await on_startup()
     await admin_commands_setup()
