@@ -244,7 +244,7 @@ async def send_welcome(message: Message):
     has_premium_access = await check_premium_access(user_id)
     logger.info(f"Пайдаланушы {user_id} премиум қолжетімділікке ие: {has_premium_access}")
 
-    # Жаңартылған сәлемдесу хабарламасы
+    # Жаңартылған сәлемдесу хабарламасы 
     welcome_text = (
         "👋 Сәлеметсіз бе! \n\n"
         "Біз сізге Математика және Информатика пәндер бойынша үздік нұсқаларды ұсынамыз.\n\n"
@@ -417,17 +417,21 @@ async def handle_free_variant(callback: CallbackQuery, subject_code: str):
                 WHERE user_id=$1 AND subject_name=$2
             """, user_id, subject_name)
 
+            #24 hours
             if cooldown_record and cooldown_record["next_free_time"]:
                 next_free_time = cooldown_record["next_free_time"]
                 if now < next_free_time:
                     diff = next_free_time - now
-                    seconds = int(diff.total_seconds())
+                    total_seconds = int(diff.total_seconds())
+                    hours, remainder = divmod(total_seconds, 3600)
+                    minutes, seconds = divmod(remainder, 60)
                     await callback.message.answer(
-                        f"⏳ *Сіз келесі тегін пробникті {seconds} секундтан кейін ала аласыз.*",
+                        f"⏳ *Сіз келесі тегін пробникті {hours} сағат {minutes} минут {seconds} секундтан кейін ала аласыз.*",
                         parse_mode="Markdown",
                         reply_markup=get_subjects_keyboard()
                     )
                     return
+
 
             # Смотрим, остались ли бесплатные тесты
             free_access = await conn.fetchrow("""
@@ -492,7 +496,7 @@ async def handle_free_variant(callback: CallbackQuery, subject_code: str):
             """, test_id, user_id, subject_name)
 
             # Обновляем кулдаун: 1 минута
-            new_time = now + datetime.timedelta(minutes=1)
+            new_time = now + datetime.timedelta(hours=24)
             await conn.execute("""
                 INSERT INTO user_cooldowns (user_id, subject_name, next_free_time, next_premium_time)
                 VALUES ($1, $2, $3, NULL)
@@ -563,17 +567,21 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
                 WHERE user_id=$1 AND subject_name=$2
             """, user_id, subject_name)
 
+            # 24 hours
             if cooldown_record and cooldown_record["next_premium_time"]:
                 next_premium_time = cooldown_record["next_premium_time"]
                 if now < next_premium_time:
                     diff = next_premium_time - now
-                    seconds = int(diff.total_seconds())
+                    total_seconds = int(diff.total_seconds())
+                    hours, remainder = divmod(total_seconds, 3600)
+                    minutes, seconds = divmod(remainder, 60)
                     await callback.message.answer(
-                        f"⏳ *Сіз келесі премиум-пробникті {seconds} секундтан кейін ала аласыз.*",
+                        f"⏳ *Сіз келесі премиум-пробникті {hours} сағат {minutes} минут {seconds} секундтан кейін ала аласыз.*",
                         parse_mode="Markdown",
                         reply_markup=get_subjects_keyboard()
                     )
                     return
+
 
             # Пайдаланушының премиум қолжетімділігін тексеру
             access = await conn.fetchrow("""
@@ -638,7 +646,7 @@ async def handle_special_variant(callback: CallbackQuery, subject_code: str, acc
             """, test_id, user_id, subject_name, access_type)
 
             # Обновляем кулдаун: 1 минута
-            new_time = now + datetime.timedelta(minutes=1)
+            new_time = now + datetime.timedelta(hours=24)
             await conn.execute("""
                 INSERT INTO user_cooldowns (user_id, subject_name, next_free_time, next_premium_time)
                 VALUES ($1, $2, NULL, $3)
